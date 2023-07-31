@@ -1,22 +1,22 @@
 class Queue:
     def __init__(self):
-        self.itens = []
+        self.items = []
 
     def __len__(self):
-        return len(self.itens)
-
-    def is_empty(self):
-        return len(self.itens) == 0
+        return len(self.items)
 
     def enqueue(self, value):
-        self.itens.append(value)
+        self.items.append(value)
 
     def dequeue(self):
         if self.is_empty():
-            raise KeyError("A fila está vazia, não é possível remover nenhum elemento.")
-        return self.itens.pop(0)
+            raise IndexError("Não é possível remover nenhum elemento")
+        return self.items.pop(0)
 
     def search(self, index):
-        if index < 0 or index >= len(self.itens):
+        if index < 0 or index >= len(self.items):
             raise IndexError("Índice Inválido ou Inexistente")
-        return self.itens[index]
+        return self.items[index]
+
+    def is_empty(self):
+        return len(self.items) == 0

@@ -1,4 +1,3 @@
-import pytest
 from ting_file_management.priority_queue import PriorityQueue
 
 

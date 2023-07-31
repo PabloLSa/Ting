@@ -1,4 +1,3 @@
-import pytest
 from ting_file_management.priority_queue import PriorityQueue
 
 
@@ -25,3 +24,4 @@ def test_basic_priority_queueing():
     assert len(pq) == 1
     assert pq.dequeue() == task_4
     assert len(pq) == 0
+

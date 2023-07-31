@@ -1,5 +1,6 @@
 import sys
 
+
 def txt_importer(file_path):
     mensagem_erro_formato_invalido = "Formato inválido"
     mensagem_erro_arquivo_nao_encontrado = "Arquivo {file_path} não encontrado"
@@ -15,4 +16,3 @@ def txt_importer(file_path):
     except FileNotFoundError:
         sys.stderr.write(mensagem_erro_arquivo_nao_encontrado.format(file_path=file_path) + "\n")
         return []
-

@@ -25,4 +25,3 @@ def test_basic_priority_queueing():
     assert len(pq) == 1
     assert pq.dequeue() == task_4
     assert len(pq) == 0
-
